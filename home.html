@@ -1,0 +1,82 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Collitech Energy limited</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="h1">
+           <img src="images/logo.png" alt="">
+        </div>
+        <div class="h2">
+           <ul>
+          <li><a href="home.html">Home</a></li> 
+           <li >
+               <a href="services.html">Services</a>
+               </li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        </div>
+        <div class="h3">
+           <ul>
+               <li id="reg"> <a href="shop.html">Shop today</a></li>
+            </ul>
+        </div>
+       </header>
+       <aside> 
+        <div>
+          <img src="images/logo.png" alt="" >
+      </div> 
+          <div onclick="openNav()" >
+              <div class="container" onclick="myFunction(this)" id="sideNav">
+                  <div class="bar1"></div>
+                  <div class="bar2"></div>
+                  <div class="bar3"></div>
+                </div>
+              </div>
+      </aside>
+      <nav style="z-index: 1;">
+        <div id="mySidenav" class="sidenav">
+            <img src="images/logo.png" alt="">
+            <a href="home.html">Home</a>
+            
+          <a href="services.html">Services</a>
+          <a href="about.html">About Us</a>
+          <a href="contact.html" >Contact Us</a>
+        </div>
+        <script>
+        
+    function myFunction(x) {
+        x.classList.toggle("change");
+      }
+    
+      var open = false;
+    
+    function openNav() {
+        var sideNav = document.getElementById("mySidenav");
+        
+        if (sideNav.style.width === "0px" || sideNav.style.width === "") {
+            sideNav.style.width = "250px";
+            open = true;
+        } else {
+            sideNav.style.width = "0";
+            open = false;
+        }
+    }
+        </script>
+    </nav>
+    <div id="hero">
+        <img src="images/Rectangle 33.png" alt="">
+<div id="inhero">
+<h1>INSTALL - MAINTAIN - REPAIR <br>
+    SOLAR ENERGY SYSTEMS</h1>
+    <p> Harness the power of the sun to generate electricity for homes,
+        businesses, and other structures.</p>
+        <button><a href="shop.html">Shop today</a></button>
+</div>
+    </div>
+</body>
+</html>
