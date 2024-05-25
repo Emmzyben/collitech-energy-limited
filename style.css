@@ -1,6 +1,7 @@
 body{
     margin: 0;
-    padding: 0;
+    padding: 0;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: justify;
 }
 
 header{
@@ -96,7 +97,7 @@ aside{
         }
         
         .sidenav a:hover {
-        background-color: #2CB67D;
+        background-color: #2E348F;
         color: #fff;
         }
         #img{
@@ -200,7 +201,98 @@ display: flex;flex-direction: row;justify-content: center;align-items: center;pa
   display: flex;flex-direction: row;justify-content: center;align-items: center;flex-wrap: wrap;background-color: #2E2E2E;
 }#next3>div{margin: 20px;text-align: center;font-size: 14px;color: #A4A4A4;}
 #next3>div>h2{color: #FF0000;}
+
+#next4{
+  position: relative;background-image: url(images/Background.png);height: 600px;
+}
+.bg{
+  background-image: linear-gradient(to right,#7c7ea377,#2E348F);position: absolute; top:0;bottom:0;left: 0;right: 0;
+}
+
+#float{
+  width: 50%;float: right;padding: 50px;color: #fff;
+}
+.services{
+  display: flex;flex-direction: row;flex-wrap: wrap;justify-content:space-between;align-items: center;
+}
+.services>div{
+  width: 20%;background-color: #F5F5F5;color: #333333;height: auto;padding: 20px;text-align: center;margin-bottom: 20px;
+}
+.services img{
+  height: 40px;width: 40px;
+}
+.services h3{
+  font-size: smaller;
+}
+
+#testimony{
+ background-image:url(images/Background\ \(1\).png) ;background-repeat: no-repeat;
+ background-position: center;background-size: cover;
+}
+#testimony>div{
+background-color: #2e358f91;text-align: center;color: #fff;padding: 20px;
+}
+
+.test,.test2{
+  display: flex;flex-direction: row;padding: 30px;justify-content: center;
+}
+.test>div{
+  width: 30%;margin: 20px;background-color: #FFFFFF;
+  border-bottom: 2px solid #FF0000;color: #333333;padding: 10px;
+}
+.test2>div{
+  width: 20%;margin: 10px;background-color: #FFFFFF;color: #333333;padding: 10px;
+}
+.test img{
+  width: 150px;border-radius: 100%; border: 1px solid #FF0000;
+}
+#contacts{
+  text-align: center;
+  padding-top: 30px;
+}
+#form>input,textarea{
+  border: 1px solid #A4A4A4;padding: 10px;margin-bottom: 20px;width: 40%;
+}
+#form #inp{
+  width: 20%;
+}
+#form>textarea{
+  height: 200px;
+}
+#form #subm{
+  width: auto; border: none; background-color: #2E348F;color:#fff;font-weight: bold;
+}
+@media only screen and (max-width: 700px) {
+  #form>input,textarea{
+    width: 300px;
+  }
+  #form #inp{
+    width: 300px;
+  }
+.test,.test2{
+  flex-direction: column;padding: 20px;
+}.test>div{
+  width: auto;
+}
+.test2>div{width: auto;}
+#float{
+  width: auto;float: none;
+}
+#next4{
+  position: unset;background-image: url(images/Background.png);height: auto;
+}
+.bg{
+  background-image: linear-gradient(to right,#7c7ea377,#2E348F);position: unset; 
+}
+}
+@media only screen and (max-width: 1000px) {
+  #float{
+    width: auto;float: none;
+  }
+
+}
           @media only screen and (max-width: 900px) {
+            
             #next3>div{font-size: 10px;}
             #next1{
               flex-direction: column;padding: 20px;
@@ -245,3 +337,100 @@ aside{
               width: 400px;
             }
           } 
+
+          #flag-container {
+            white-space: nowrap;
+            overflow: hidden;
+           
+          }
+          
+          .flag-container-inner {
+            display: inline-block;
+            white-space: nowrap;
+                    padding: 30px;
+          }
+          
+          .flag {
+            width: 200px;
+            height: 100px;
+            display: inline-block;
+            margin-right: 3%;
+          }
+          
+          #flagger {
+            background-color: #FF0000;
+          }
+
+          #footer{
+            display: flex;flex-direction: row;justify-content: center;background-color: #020202;
+            padding: 20px;color: #fff;
+          }
+          #footer>div{
+            width: 30%;margin: 30px;
+          }
+
+          #service{display: flex;flex-direction: row;justify-content: center;padding: 30px;margin: 10px;
+          
+          }
+          #service img{
+            width: 100%;
+          }
+          #service>div{
+            margin: 20px;text-align: left;width: 50%;
+          }
+
+          #about{display: flex;flex-direction: row;justify-content: center;padding: 30px;margin: 10px;
+          
+          }
+          #about2{
+            display: flex;flex-direction: row;justify-content: center;padding: 30px;background-color: #F5F5F5;
+          }
+          #about2 p{
+            font-size: 15px;
+          }
+          #about2>div{
+            margin: 20px;text-align: left;width: 50%;text-align: justify;
+          }
+          #about>div{
+            margin: 20px;text-align: left;width: 50%;
+          }
+          #about>div>ul li{
+            line-height: 35px;
+          }
+
+          @media screen and (max-width:700px) {
+            
+          #service{
+          padding: 0;margin: 20px;flex-direction: column;margin-bottom: 20px;
+                      }
+                      #service>div{
+                        margin: 10px;text-align: left;width: auto;
+                      }
+                      #about{
+                        padding: 0;margin: 20px;flex-direction: column;margin-bottom: 20px;
+                                    }
+                                    #about>div{
+                                      margin: 10px;text-align: left;width: auto;
+                                    }
+                                    #about2{
+                                      padding: 20px;;flex-direction: column;margin-bottom: 20px;
+                                                  }
+                                                  #about2>div{
+                                                    margin: 10px;text-align: left;width: auto;
+                                                  }
+            #footer{flex-direction: column;}
+            #footer>div{width: auto;margin: 10px;}
+          .flag-container-inner {
+            display: inline-block;
+            white-space: nowrap;
+                    padding: 20px;
+          }
+          
+          .flag {
+            width: 100px;
+            height: 50px;
+            display: inline-block;
+            margin-right: 2%;
+          }
+          
+          }
