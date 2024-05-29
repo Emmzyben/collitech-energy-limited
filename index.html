@@ -75,15 +75,13 @@
       <div id="hero">
         <img src="images/Rectangle 33.png" alt="">
 <div id="inhero">
-<h1>INSTALL, MAINTAIN, & REPAIR <br>
-  SOLAR ENERGY & BATTERY <br>
-  SYSTEMS</h1>
+<h1>INSTALL, MAINTAIN & REPAIR SOLAR ENERGY <br> INVERTER & BATTERY  SYSTEMS</h1>
     <p> Harness the power of the sun to generate electricity for homes,
         businesses, and other structures.</p>
         <button><a href="shop.html">Shop today</a></button>
 </div>
-    </div>
-    </section>
+</div>
+</section>
     
 
 <section class="hidden">
@@ -254,21 +252,18 @@
 
 <div class="test">
     <div>
-        <img src="images/image1.png" alt="">
  <p>“Solar power has transformed our lives! No more blackouts, and we're saving money too."</p> 
 <p><b>SARAH M</b></p>
 <p>Lagos</p>
     </div>
 
     <div>
-        <img src="images/image1.png" alt="">
         <p>“I recently switched to solar with Collitech, and I’ve achieved energy independence”</p>
    <p><b>JOHN AKIDI</b></p>
    <p>Port Harcourt</p>
        </div>
    
        <div>
-        <img src="images/image1.png" alt="">
         <p>"We finally have control over our energy bills thanks to Collitech solar system installation.  No more power outages interrupting our evenings!"</p>  
    <p><b>OLU MAKINDE</b></p>
    <p>Lagos</p>
@@ -320,43 +315,43 @@
       <div class="flag-container-inner"></div>
     </div>
     <script>
+      const countryFlags = ['images/image.jpg', 'images/image(1).jpg', 'images/image(2).jpg', 'images/image(3).jpg', 'images/image(4).jpg'];
       
-  const countryFlags = ['images/image.jpg', 'images/image(1).jpg', 'images/image(2).jpg', 'images/image(3).jpg', 'images/image(4).jpg'];
-  
-  const flagContainerInner = document.querySelector('.flag-container-inner');
-  
-  function createFlagElement(flagPath) {
-    const flagElement = document.createElement('img');
-    flagElement.src = flagPath;
-    flagElement.classList.add('flag');
-    return flagElement;
-  }
-  
-  // Duplicate the images to ensure seamless rolling effect
-  const duplicatedFlags = [...countryFlags, ...countryFlags];
-  
-  duplicatedFlags.forEach(flagPath => {
-    const flagElement = createFlagElement(flagPath);
-    flagContainerInner.appendChild(flagElement);
-  });
-  
-  let currentPosition = 0;
-  const increment = 0.05; // Adjust the increment value for the desired speed
-  
-  function rollFlags() {
-    currentPosition -= increment;
-    flagContainerInner.style.transform = `translateX(${currentPosition}%)`;
-  
-    if (currentPosition <= -100) {
-      currentPosition = 0;
-    }
-  
-    requestAnimationFrame(rollFlags);
-  }
-  
-  // Start the animation loop
-  rollFlags();
+      const flagContainerInner = document.querySelector('.flag-container-inner');
+      
+      function createFlagElement(flagPath) {
+        const flagElement = document.createElement('img');
+        flagElement.src = flagPath;
+        flagElement.classList.add('flag');
+        return flagElement;
+      }
+      
+      // Duplicate the images to ensure seamless rolling effect
+      const duplicatedFlags = [...countryFlags, ...countryFlags];
+      
+      duplicatedFlags.forEach(flagPath => {
+        const flagElement = createFlagElement(flagPath);
+        flagContainerInner.appendChild(flagElement);
+      });
+      
+      let currentPosition = 0;
+      const increment = 0.05; // Adjust the increment value for the desired speed
+      
+      function rollFlags() {
+        currentPosition -= increment;
+        flagContainerInner.style.transform = `translateX(${currentPosition}%)`;
+      
+        if (currentPosition <= -100) {
+          currentPosition = 0;
+        }
+      
+        requestAnimationFrame(rollFlags);
+      }
+      
+      // Start the animation loop
+      rollFlags();
     </script>
+    
   </div>
 </section>
 
@@ -365,14 +360,12 @@
   <div id="footer">
   <div>
     <img src="images/Group 9.png" alt="" width="120px">
-    <p>Sed cursus tortor neque, sit amet
-        dignissim purus pretium vel. Nullam et
-        sodales sem. Fusce elit urna, accumsan id
-        mollis eu, egestas a nunc.</p>
+    <p>© 2024 All rights reserved. Collitech Energy Limited your trusted leading solar energy company.</p>
   </div>
   <div>
    <h3>Contact Us</h3> 
-<p><i class="fa fa-map-marker" style=" font-size:20px;color:#FF0000;padding-right: 10px"></i>6 Victory Avenue opposite NOUN by Obiri-Ikwere junction</p>
+<p><i class="fa fa-map-marker" style=" font-size:20px;color:#FF0000;padding-right: 10px"></i>6 Victory Avenue opposite NOUN by Obiri-Ikwere junction, 
+  Port Harcourt, Rivers State, Nigeria</p>
 <p><i class="fa fa-phone" style="font-size:15px;color:#FF0000;padding-right: 10px;"></i>+23408038771226</p>
 <p><i class="fa fa-phone" style="font-size:15px;color:#FF0000;padding-right: 10px;"></i>+61451800453</p>
 <p><i class="fa fa-envelope" style="font-size:15px;color:#FF0000;padding-right: 10px;"></i>info@collitechenergylimited.com</p>
