@@ -353,12 +353,12 @@ aside{
           .flag-container-inner {
             display: inline-block;
             white-space: nowrap;
-                    padding: 30px;
+                    padding: 0px;
           }
           
           .flag {
             width: 200px;
-            height: 100px;
+            height: 150px;
             display: inline-block;
             margin-right: 3%;
           }
@@ -428,12 +428,12 @@ aside{
           .flag-container-inner {
             display: inline-block;
             white-space: nowrap;
-                    padding: 20px;
+                    padding: 0px;
           }
           
           .flag {
             width: 100px;
-            height: 50px;
+            height: 100px;
             display: inline-block;
             margin-right: 2%;
           }
